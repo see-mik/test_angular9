@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #dc3545;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #333;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    color: #666666;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: .4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+header, main, footer {
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+table th {
+  background-color: var(--light-color);
+}
+
+.btn {
+  background-color: var(--light-color);
+  display: inline-block;
+  padding: .4rem;
+  color: var(--dark-color);
+  border: none;
+  transition: opacity .2s;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: var(--dark-color);
+    color: #fff;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
